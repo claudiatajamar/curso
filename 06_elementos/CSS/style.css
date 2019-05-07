@@ -60,3 +60,19 @@ dt{
 .clearfix{
     clear: both;
 }
+footer a {
+    color: inherit;
+}
+.main_footer{
+    margin-bottom: 0;
+}
+.verde{
+    color: aquamarine
+    font-weight:bold;
+    text-decoraction:underline;
+    
+}
+/* strong{
+    font-weight: normal;
+    display: none;
+} */
