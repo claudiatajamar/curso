@@ -7,7 +7,7 @@ body {
     padding: 0.8rem 0rem 0.5rem 1rem
 }
 .main_header p {
-    font-size: 1.33rem;x
+    font-size: 1.33rem;
     font-weight: bold;
     margin-top: -1rem;
 }
@@ -28,35 +28,51 @@ img {
     max-width: 100%;
 }
 .pre_no_mono {
-font-family: inherit
+    font-family: inherit
 }
-blockquote{
- /*margin-inline-start:0;
- margin-inline-end:0;*/ 
-margin-left: 0;
-margin-right: 0;
-padding-left: 1rem;
-border-left: 4px solid lightgrey
+
+blockquote {
+    /* margin-inline-start: 0;
+    margin-inline-end: 0; */
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 1rem;
+    border-left: 4px solid lightgrey
+   /* font-style: italic;*/
 }
 blockquote footer {
     width: fit-content;
     margin-top: 0.5rem;
-    padding-top:  0.3rem;
-    border-top: 1px solid gray;
+    padding-top: 0.3rem;
+    border-top: 1px solid gray
 }
-ul{
-list-style-type:disc 
-*/
+/* ul {
+    list-style-type: decimal;
 }
-dt{
+ol {
+    list-style-type: disc;
+}*/
+.dt {
     float: left;
     clear: left;
-
 }
-.dd{
+.dd {
     float: left;
     clear: right;
 }
-.clearfix{
+.clearfix {
     clear: both;
 }
+footer a {
+    color: inherit;
+}
+.main_footer p {
+    margin-bottom: 0;
+}
+.verde {
+    color: green;
+    font-weight: bold;
+}
+/* strong {
+    font-weight: normal
+}*/
