@@ -66,6 +66,7 @@ ol {
 footer a {
     color: inherit;
 }
+<<<<<<< HEAD
 .main_footer p {
     margin-bottom: 0;
 }
@@ -76,3 +77,18 @@ footer a {
 /* strong {
     font-weight: normal
 }*/
+=======
+.main_footer{
+    margin-bottom: 0;
+}
+.verde{
+    color: aquamarine
+    font-weight:bold;
+    text-decoraction:underline;
+    
+}
+/* strong{
+    font-weight: normal;
+    display: none;
+} */
+>>>>>>> 86e93721ad08dd7f6c87a773040a217a9ebc0209
