@@ -11,6 +11,27 @@ body {
     font-weight: bold;
     margin-top: -1rem;
 }
+.main_header nav{
+margin-left:  -1rem
+}
+.main_header nav ul{
+list-style-type: none;
+margin: 0;
+margin:0;
+
+}
+.main_header  li{
+display: inline -block;
+}
+.main_header nav a{
+
+color: inherit;
+text-decoration-color: none;
+display: block;
+padding:1rem;
+}
+
+ 
 .main_footer {
     background-color: brown;
     color: bisque;
@@ -66,7 +87,6 @@ ol {
 footer a {
     color: inherit;
 }
-<<<<<<< HEAD
 .main_footer p {
     margin-bottom: 0;
 }
@@ -77,18 +97,3 @@ footer a {
 /* strong {
     font-weight: normal
 }*/
-=======
-.main_footer{
-    margin-bottom: 0;
-}
-.verde{
-    color: aquamarine
-    font-weight:bold;
-    text-decoraction:underline;
-    
-}
-/* strong{
-    font-weight: normal;
-    display: none;
-} */
->>>>>>> 86e93721ad08dd7f6c87a773040a217a9ebc0209
