@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>multimedia - elementos de la webs</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body id="inicio">
+    <header class="main_header">
+        <h1>Etiquetas de HTML</h1>
+        <P>Clasificación de las <strong>etiquetas</strong> según el <strong>estándar HTML 5</strong></P>
+
+        <nav>
+            <ul>
+
+                <li><a href="./index.html#sections_elements">Sections</a></li>
+                <li><a href="./index.html#Grouping" rel="tag">Grouping Content</a></li>
+                <li><a href="./index.html#text_level">Text-level Semantics</a></li>
+                <li><a href="./mmedia.html">Multimedia</a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+    <div class=" content_ wrapper">
+        <main>
+            <section id="mmedia">
+                <header>
+                    <h2>Multimedia</h2>
+                </header>
+                <p>Entre los elementos embebidos y multimedia, veremos como utilizar:</p>
+
+                <ul>
+
+                    <li>Imágenes</li>
+
+                    <ul>
+
+                        <li>jpg</li>
+
+                        <li>gif</li>
+
+                        <li>png</li>
+
+                        <li>webp</li>
+
+                        <li>svg</li>
+
+                    </ul>
+
+                    <li>Video y Audio</li>
+
+                    <ul>
+
+                        <li>mp4</li>
+
+                        <li>ogg</li>
+
+                        <li>webm</li>
+
+                    </ul>
+
+                    <li>Elementos de navegación gráficos</li>
+
+                </ul>
+
+            </section>
+
+            <section>
+                <h3>Imágenes</h3>
+                <div class="seccion_imagen">
+                    <!--  <img src="./assets/komodo.jpg" alt="Varano de Komodo mostrando su lengua bifida"> -->
+                    <img src="./assets/varanococodrilo1.png" alt="Varano de Komodo">
+                    <img src="./assets/ardilla.gif" alt="ardilla">
+                    <img srcset="./assets/3boats.webp" src="./assets/3boats.jpg" alt="barca">
+                </div>
+
+                <div class="clearfix"></div>
+                <p>uso de imagenes responcive html</p>
+                <!-- <img src="./assets/komodo.jpg" alt="Varano de Komodo mostrando su lengua bífida"> -->
+                <div>
+
+                        <!-- <img src="./assets/komodo.jpg" alt="Varano de Komodo mostrando su lengua bífida"> -->
+                       
+                        <img srcset="./assets/komodo.300.jpg 300w, 
+                       
+                        ./assets/komodo.400.jpg 400w, 
+                       
+                        ./assets/komodo.500.jpg 500w,
+                       
+                        ./assets/komodo.jpg 600w" 
+                       
+                        sizes=" (max-width: 300px), 
+                       
+                        (max-width: 400px), 
+                       
+                        (max-width: 500px)" 
+                       
+                        src="./assets/komodo.jpg" 
+                       
+                        alt="Varano de Komodo mostrando su lengua bífida">
+                        <img src="./assets/Caballo-monte.jpg" alt="Elva dressed as a fairy">
+                        
+                        </div>
+<p>la etiqueta picture y la imagenes resposivas  en html</p>
+
+            
+<picture>
+
+<source media="(min-width:600px)"srcset="./assets/ica"
+
+
+
+</picture>
+
+
+<p>la etiqueta  picture y los formatos alternativos  de imagen</p>
+            </section>
+            <div class="clearfix"></div>
+            <section>
+
+                <h3>video y audio <h3>
+            </section>
+            <section>
+                <h3>elementos de navegacion</h3>
+                <section>
+
+
+
+                </section>
+            </section>
+
+        </main>
+
+
+
+    </div>
+
+
+
+    <aside>
+        <h2>publicidad</h2>
+        <p>aqui ira la publicidad</p>
+    </aside>
+
+    <footer class="main_footer">
+        <address>
+            <p>claudia gaez: <a href="mailto://claudigiraldo057@gmail.com"></a>claudigiraldo057@gmail.com</p>
+            <p><small>© Curso Tajamar</small></p>
+        </address>
+    </footer>
+</body>
+
+</html>
