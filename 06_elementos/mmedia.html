@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <title>Multimedia - Elementos de la Web</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body id="inicio">
     <header class="main_header">
         <h1>Etiquetas de HTML</h1>
@@ -35,14 +37,14 @@
                             <li>png</li>
                             <li>(webp)</li>
                             <li>svg</li>
-                        </ul>                        
+                        </ul>
                     </li>
                     <li>Video y Audio
                         <ul>
                             <li>mp4</li>
                             <li>ogg</li>
                             <li>webm</li>
-                        </ul>                        
+                        </ul>
                     </li>
                     <li>Elementos de navegación gráficos</li>
                 </ul>
@@ -52,49 +54,64 @@
                         <!-- <img src="./assets/komodo.jpg" alt="Varano de Komode mostrando su lengua bífida"> -->
                         <img src="./assets/varanococodrilo1.png" alt="Varano cocodrilo">
                         <img src="./assets/ardilla.gif" alt="Ardilla">
-                        <img srcset="./assets/3boats.webp"
-                            src="./assets/3boats.jpg" alt="Barcas"> 
-                            <img src="./assets/gatito.jpg" alt="gatito">
+                        <img srcset="./assets/3boats.webp" src="./assets/3boats.jpg" alt="Barcas">
+                        <img src="./assets/gatito.jpg" alt="gatito">
 
                     </div>
-                    <div class="clearfix"></div>    
+                    <div class="clearfix"></div>
                     <p>Uso de imágenes responsivas en HTML</p>
                     <div>
-                        <img 
-                        srcset="./assets/komodo.300.jpg 300w,
+                        <img srcset="./assets/komodo.300.jpg 300w,
                                     ./assets/komodo.400.jpg 400w, 
                                     ./assets/komodo.500.jpg 500w,
-                                    ./assets/komodo.jpg 600w"
-                             size = "(max-width: 300px),
+                                    ./assets/komodo.jpg 600w" size="(max-width: 300px),
                                      (max-width: 400px), 
-                                     (max-width: 500px)"       
-                            src="./assets/komodo.jpg"
-                        alt="Varano de Komodo mostrando su lengua bífida">
+                                     (max-width: 500px)" src="./assets/komodo.jpg"
+                            alt="Varano de Komodo mostrando su lengua bífida">
                     </div>
                     <p>La etiqueta picture y las imágenes responsivas en HTML</p>
                     <picture>
                         <source media="(min-width: 600px)" srcset="./assets/gatito.jpg" type="gatito/jpg">
                         <source media="(min-width: 500px)" srcset="./assets/gatito.jpg" type="gatito/jpg">
                         <source media="(min-width: 400px)" srcset="./assets/gatito.jpg" type="gatito/jpg">
-                        
-                        <source srcset="./assets/gatito.jpg" type="image/jpg">
-                            
-                            <figure>  <img src="./assets/varanococodrilo1.png" alt="Varano cocodrilo"></figure>
-                       <img src="cute-3106473_640.jpg" alt=""> 
-                       <img src="caballo-monte.jpj" alt="caballo-monte"> 
-                            
-                            <div>  <img src="caballo-monte.jpj" alt="caballo-monte.jpj"> 
-                            </div>    
 
-                            </figure>
+                        <source srcset="./assets/gatito.jpg" type="image/jpg">
+
+                        <figure> <img src="./assets/varanococodrilo1.png" alt="Varano cocodrilo"></figure>
+                        <img src="cute-3106473_640.jpg" alt="">
+                        <img src="caballo-monte.jpj" alt="caballo-monte">
+
+
+                        </figure>
                     </picture>
                     <p>La etiqueta picture y los formatos alternativos de imágenes</p>
-                </section>
-                <section>
-                    <h3>Video y Audio</h3>
 
                 </section>
-                
+                <section>
+
+                    <h3>Video y Audio</h3>
+                    <div>
+
+                        <p>Otra opción es reproducir vídeos de nuestro servidor</p>
+
+                        <video src="./assets/Ghost_in_the_Shell_Opening.webm" controls></video>
+                        
+                        <source src="./assets/Ghost_in_the_Shell_Opening.mp4" type="video/mp4">
+
+                    </div>
+                    <p>es pocible incluir un video de fuente esterna </p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kaPcI5_PTsk"="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                    <section>
+                        <h3>elementos embebidos no multimedia</h3>
+                        <p>la etiqueta iframe permite a seder a otra web desde la nuestra</p>
+                        <iframe class="web_externa" src="https://www.tajamar.es/que-es-tajamar/"=""></iframe>
+                    </section>
+
+                </section>
+
                 <section>
                     <h3>Elementos gráficos de navegación</h3>
                 </section>
@@ -103,7 +120,7 @@
         <aside>
             <h2>Publicidad</h2>
             <p>Aquí iría la publicidad</p>
-        </aside>  
+        </aside>
     </div>
     <footer class="main_footer">
         <address>
@@ -112,4 +129,5 @@
         </address>
     </footer>
 </body>
+
 </html>
