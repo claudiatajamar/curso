@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
     <title>Multimedia - Elementos de la Web</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body id="inicio">
     <header class="main_header">
         <h1>Etiquetas de HTML</h1>
@@ -37,14 +35,14 @@
                             <li>png</li>
                             <li>(webp)</li>
                             <li>svg</li>
-                        </ul>
+                        </ul>                        
                     </li>
                     <li>Video y Audio
                         <ul>
                             <li>mp4</li>
                             <li>ogg</li>
                             <li>webm</li>
-                        </ul>
+                        </ul>                        
                     </li>
                     <li>Elementos de navegación gráficos</li>
                 </ul>
@@ -54,80 +52,90 @@
                         <!-- <img src="./assets/komodo.jpg" alt="Varano de Komode mostrando su lengua bífida"> -->
                         <img src="./assets/varanococodrilo1.png" alt="Varano cocodrilo">
                         <img src="./assets/ardilla.gif" alt="Ardilla">
-                        <img srcset="./assets/3boats.webp" src="./assets/3boats.jpg" alt="Barcas">
-                        <img src="./assets/gatito.jpg" alt="gatito">
-
+                        <img srcset="./assets/3boats.webp"
+                            src="./assets/3boats.jpg" alt="Barcas">
+                         <img src="./assets/005.gif" alt="Gif animado abstracto">    
+                        <img src="./assets/WoodElf.png" alt="Elfo">
+                        <img srcset="./assets/logo.svg"
+                        src="./assets/logo.gif" alt="Logotipo">
                     </div>
-                    <div class="clearfix"></div>
+                    <div class="clearfix"></div>    
                     <p>Uso de imágenes responsivas en HTML</p>
                     <div>
-                        <img srcset="./assets/komodo.300.jpg 300w,
+                        <img 
+                        srcset="./assets/komodo.300.jpg 300w,
                                     ./assets/komodo.400.jpg 400w, 
                                     ./assets/komodo.500.jpg 500w,
-                                    ./assets/komodo.jpg 600w" size="(max-width: 300px),
+                                    ./assets/komodo.jpg 600w"
+                             size = "(max-width: 300px),
                                      (max-width: 400px), 
-                                     (max-width: 500px)" src="./assets/komodo.jpg"
-                            alt="Varano de Komodo mostrando su lengua bífida">
+                                     (max-width: 500px)"       
+                            src="./assets/komodo.jpg"
+                        alt="Varano de Komodo mostrando su lengua bífida">
                     </div>
                     <p>La etiqueta picture y las imágenes responsivas en HTML</p>
                     <picture>
-                        <source media="(min-width: 600px)" srcset="./assets/gatito.jpg" type="gatito/jpg">
-                        <source media="(min-width: 500px)" srcset="./assets/gatito.jpg" type="gatito/jpg">
-                        <source media="(min-width: 400px)" srcset="./assets/gatito.jpg" type="gatito/jpg">
-
-                        <source srcset="./assets/gatito.jpg" type="image/jpg">
-
-                        <figure> <img src="./assets/varanococodrilo1.png" alt="Varano cocodrilo"></figure>
-                        <img src="cute-3106473_640.jpg" alt="">
-                        <img src="caballo-monte.jpj" alt="caballo-monte">
-
-
-                        </figure>
+                        <source media="(min-width: 600px)" srcset="./assets/iguana.600.jpg" type="image/jpg">
+                        <source media="(min-width: 500px)" srcset="./assets/iguana.500.jpg" type="image/jpg">
+                        <source media="(min-width: 400px)" srcset="./assets/iguana.400.jpg" type="image/jpg">
+                        <source srcset="./assets/iguana.300.jpg" type="image/jpg">
+                        <img src="./assets/iguana.600.jpg" alt="Iguana en un tronco">                        
                     </picture>
                     <p>La etiqueta picture y los formatos alternativos de imágenes</p>
-
+                    <picture>
+                        <source srcset="./assets/tropical-sunrise.webp" type="image/webp">
+                        <img src="./assets/tropical-sunrise.jpg" alt="Amanecer tropical">
+                    </picture>
+                    <picture>
+                        <source srcset="./assets/logo2.svg" type="image/svg+xml">
+                        <img src="./assets/logo2.png" alt="Logotipo">    
+                    </picture>
+                    <p>Etiqueta figure</p>
+                    <figure>
+                        <img src="./assets/komodo.jpg" alt="">
+                        <figcaption>Varano de Komodo</figcaption>
+                    </figure>
+                    <figure>
+                         <img src="./assets/iguana.jpg" alt="">
+                        <figcaption>Iguana</figcaption>                       
+                    </figure>
                 </section>
                 <section>
-
                     <h3>Video y Audio</h3>
-                    <div>
-
-                        <p>Otra opción es reproducir vídeos de nuestro servidor</p>
-
-                        <video src="./assets/Ghost_in_the_Shell_Opening.webm" controls></video>
-                        
-                        <source src="./assets/Ghost_in_the_Shell_Opening.mp4" type="video/mp4">
-
+                    <p>Es posible incluir un video desde una fuente externa</p>
+                    <div class="embed-container">
+                        <iframe 
+                        src="https://www.youtube.com/embed/rg_zwK_sSEY" 
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>                        
                     </div>
-                    <p>es pocible incluir un video de fuente esterna </p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kaPcI5_PTsk"="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-
-                    <section>
-                        <h3>elementos embebidos no multimedia</h3>
-                        <p>la etiqueta iframe permite a seder a otra web desde la nuestra</p>
-                        <iframe class="web_externa" src="https://www.tajamar.es/que-es-tajamar/"=""></iframe>
-                    </section>
-
+                    <p>Otra opción es reproducir videos de nuestro servidor</p>
+                    <video controls>
+                        <source src="./assets/Ghost_in_the_Shell_Opening.webm" type="video/webm">
+                        <source src="./assets/Ghost_in_the_Shell_Opening.mp4" type="video/mp4">
+                    </video>
+                    <audio src="./assets/Lady Gaga - Poker Face [www.slider.kz].mp3" controls></audio>
                 </section>
-
                 <section>
                     <h3>Elementos gráficos de navegación</h3>
                 </section>
+                <aside>
+                    <h3>Elementos embebidos no multimedia</h3>
+                    <p>La etiqueta iframe permite acceder a otra web desde la nuestra</p>
+                    <iframe class="web_externa" src="https://www.tajamar.es/"></iframe>
+                </aside>
             </section>
         </main>
         <aside>
             <h2>Publicidad</h2>
             <p>Aquí iría la publicidad</p>
-        </aside>
+        </aside>  
     </div>
     <footer class="main_footer">
         <address>
-            <p>claudia giraldo - <a rel="author" href="mailto://claudigiraldo057@gmail.com">claudigiraldo057</a></p>
+            <p>claudia gaez - <a rel="author" href="mailto://claudigiraldo057@gmail.com">claudigiraldo057@gmail.com</a></p>
             <p><small> &copy; Tajamar</small></p>
-        </address>
+        </address>giraldo
     </footer>
 </body>
-
 </html>
